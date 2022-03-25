@@ -14,24 +14,23 @@ body {
 main {
     padding-top: 3%;
 }
-nav {
+
+
+nav li {
+    color: #f2f2f2;
     font-size: 20px;
     overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-nav li {
-    color: #f2f2f2;
     padding: 20px 15px;
 }
+.nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
 nav li:hover {
     background: #ddd;
     color: black;
-}
-ul > li {
-    display: inline-block;
 }
 .current{
     background: #ddd;
@@ -68,10 +67,12 @@ div.gallery {
     border-radius: 5px;
 }
 div.finalgallery{
+    width: 100%;
     border: solid 3px #333;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -143,7 +144,7 @@ input[type=submit] {
     animation-timing-function: ease-in-out;
 }
 
-@keyframes intro {
+@keyframes intro  {
     from {
     width: 0%;
     opacity: 0;}
@@ -151,4 +152,12 @@ input[type=submit] {
     to {
     width: 400px;
     opacity: 1;}
+}
+
+@media ( prefers-reduced-motion: reduce) {
+    from {
+        opacity: 0;}
+    
+        to {
+        opacity: 1;}
 }
