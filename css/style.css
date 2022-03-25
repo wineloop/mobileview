@@ -1,0 +1,154 @@
+body {
+    background-image: url("../images/background.png");
+    background-color: #FFFFFF;
+    background-size: cover; 
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+main {
+    padding-top: 3%;
+}
+nav {
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav li {
+    color: #f2f2f2;
+    padding: 20px 15px;
+}
+nav li:hover {
+    background: #ddd;
+    color: black;
+}
+ul > li {
+    display: inline-block;
+}
+.current{
+    background: #ddd;
+    color: black;
+    font-weight: bold;
+}
+.corner {
+    font-family: "Trirong", serif;
+}
+.corner:hover {
+    color: #f2f2f2;
+    background: #333;
+}
+img:hover:nth-child(2n) {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+div.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 5px;
+}
+div.finalgallery{
+    border: solid 3px #333;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.mainphoto {
+    width: 90%;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+p {
+    margin:auto;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px
+}
+div {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+h1 {
+    font-size:35px
+}
+h2 {
+    font-size: 25px;
+}
+.assemblyp1 {
+    padding-top: 70px;
+}
+footer {
+    
+    text-align: center;
+    padding: 5px;
+    color: #333;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+
+}
+
+input[type=text], select, textarea {
+    border-top: 100px;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #88b2d4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#intro {
+    animation-name:intro;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes intro {
+    from {
+    width: 0%;
+    opacity: 0;}
+
+    to {
+    width: 400px;
+    opacity: 1;}
+}

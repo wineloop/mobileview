@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/48b90791a3.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<title>Introduction</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class ="corner"><a href = "#intro">Basic 65% Keyboard Guide</a></li>
+                <li><a href = "index.html" >Introduction</a></li>
+                <li><a href = "switches.html">Switches & Stabs</a></li>
+                <li><a href = "soldering.html">Soldering</a></li>
+                <li><a href = "assembly.html">Final Assembly</a></li>
+                <li class="current"><a>Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div style = "padding-top: 70px;" id="intro1">
+			<form action="action_page.php">
+                <label for="fname"><p>First and Last Name</p></label>
+                <input type="text" id="fname" name="firstname and lastname" placeholder="Your name..">
+
+                <label for="lname"><p>Email</p></label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="country"><p>Reason for Contact</p></label>
+                <select id="country" name="country">
+                  <option value="idea">New Keyboard Idea</option>
+                  <option value="help">Need Keyboard Help</option>
+                  <option value="contribute">Want to Contribute</option>
+                  <option value="other">Other</option>
+                </select>
+
+                <label for="subject"><p>Message</p></label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <p><input type="submit" value="Submit"></p>
+              </form>
+		</div>
+	</main>	
+	<footer>
+		<p>Kevin Choi &copy; 2022</p>
+		<i class="fa-brands fa-github"></i> wineloop
+	</footer>
+</body>
+</html>
